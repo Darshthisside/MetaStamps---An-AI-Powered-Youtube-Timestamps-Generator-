@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# MetaStamps — AI-powered YouTube Timestamps Generator
 
-## Project info
+MetaStamps generates accurate, readable timestamps for YouTube videos using an AI-assisted workflow. This repository contains a web UI built with Vite + React + TypeScript and a small frontend for uploading or pointing at video/audio sources and producing timestamped segments.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Highlights
+- Generate time-coded segments and short summaries for video content
+- Clean, copy-pasteable timestamp output for use in video descriptions
+- Lightweight React + Vite frontend with Tailwind styling
 
-## How can I edit this code?
+## Quick start (developer)
 
-There are several ways of editing your application.
+Requirements
+- Node.js 16+ (LTS recommended)
+- npm (or bun/pnpm if preferred)
 
-**Use Lovable**
+Install dependencies
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+```powershell
+cd C:\Users\Darshan\Downloads\chronostream-ai-main\chronostream-ai-main
+npm install
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+Run the dev server
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```powershell
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open http://localhost:5173 in your browser (Vite's default). The app will hot-reload on changes.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Build for production
 
-**Use GitHub Codespaces**
+```powershell
+npm run build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project layout (top-level)
+- `index.html` — Vite entry
+- `src/` — React + TypeScript source files
+- `src/components/` — UI components
+- `src/hooks/` — custom hooks used by the app
+- `public/` — static assets
 
-## What technologies are used for this project?
+## How to use
+1. Start the dev server.
+2. Open the app in your browser and follow the UI to provide a video URL or upload audio.
+3. Generate timestamps and copy them into your video description.
 
-This project is built with:
+## Contributing
+Contributions are welcome. If you open issues or PRs, please:
+- Provide reproducible steps for bugs
+- Keep changes focused and include tests where relevant
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Notes
+- This README focuses on using and developing the frontend app. Any backend/AI integration or API keys should be configured separately and are not stored here.
+- Git will warn about CRLF line ending normalization on Windows; that's expected and safe.
 
-## How can I deploy this project?
+## License
+This project is available under the MIT License.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+If you'd like a shorter or longer README (more setup details, screenshots, or deployment instructions), tell me what to include and I'll update it.
